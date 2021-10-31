@@ -15,6 +15,9 @@
   },
   "author": "",
   "license": "ISC",
+  "jest": {
+    "testEnvironment": "node"
+  },
   "bugs": {
     "url": "https://github.com/jselmani/nasa-api/issues"
   },
