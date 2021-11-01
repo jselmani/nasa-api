@@ -2,8 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const logger = require("morgan");
 
-const planetsRouter = require("./routes/planets/planets.router");
-const launchesRouter = require("./routes/launches/launches.router");
+const api = require("./routes/api");
 
 const app = express();
 
@@ -15,7 +14,6 @@ app.use(
 app.use(logger("combined"));
 app.use(express.json());
 
-app.use("/planets", planetsRouter);
-app.use("/launches", launchesRouter);
+app.use("/v1", api);
 
 module.exports = app;
