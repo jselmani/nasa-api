@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run cluster",
     "dev": "nodemon ./server.js",
-    "cluster": "pm2 start server -i max",
+    "cluster": "pm2 start ./server.js -i max",
     "test": "jest"
   },
   "repository": {
